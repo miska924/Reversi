@@ -1,0 +1,1 @@
+g++ game.cpp -o game --std=c++17 -O2 -lGL -lglut
