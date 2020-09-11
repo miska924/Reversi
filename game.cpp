@@ -557,6 +557,7 @@ void Timer(int value) {
 		//cout << "your turn: " << x + 1 << " " << y + 1 << endl;
         put(a, now, x, y);
     } else {
+	sleep(2);
         int was[8][8];
         copy(was, a);
         int x, y;
@@ -604,7 +605,7 @@ int main(int argc, char** argv) {
 	glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB);
 	glutInitWindowSize(WinWid, WinHei);
 	glutInitWindowPosition(300, 200);
-	glutCreateWindow("reversi");
+	glutCreateWindow("miska924_float_window");
 	glutDisplayFunc(Draw);
 	glutTimerFunc(50, Timer, 0);//Анимация
 	glutMotionFunc(MousePressedMove);

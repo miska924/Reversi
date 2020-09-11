@@ -2,9 +2,13 @@
 
 IF THERE IS NO OPENGL YOU HAVE TO INSTALL IT:
     
-    for ubuntu:
+    for apt:
     
         sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev
+
+    for pacman:
+
+        sudo pacman -S glu freeglut
 
 chmod +x build
 
@@ -13,3 +17,5 @@ chmod +x build
 ./game
 
 Enjoy Reversi!
+
+
