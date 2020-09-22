@@ -604,8 +604,8 @@ int main(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB);
 	glutInitWindowSize(WinWid, WinHei);
-	glutInitWindowPosition(300, 200);
-	glutCreateWindow("miska924_float_window");
+	glutInitWindowPosition(100, 100);
+	glutCreateWindow("reversi");
 	glutDisplayFunc(Draw);
 	glutTimerFunc(50, Timer, 0);//Анимация
 	glutMotionFunc(MousePressedMove);

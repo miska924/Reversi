@@ -1,5 +1,7 @@
 # Reversi
 
+![](demo.gif)
+
 IF THERE IS NO OPENGL YOU HAVE TO INSTALL IT:
     
     for apt:
