@@ -1,1 +1,17 @@
-g++ game.cpp -o game --std=c++17 -O2 -lGL -lglut
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
+echo ${machine}
+
+if [ "$machine" == "Mac" ]; then
+    g++ game.cpp -o game --std=c++17 -O2 -framework GLUT -framework OpenGL -framework Cocoa
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    g++ game.cpp -o game --std=c++17 -O2 -lGL -lglut
+fi
+
