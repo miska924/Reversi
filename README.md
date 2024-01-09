@@ -11,7 +11,8 @@ for apt:
 for pacman:
 
         sudo pacman -S glu freeglut
-    
+
+for macos it should already work fine
     
 build it
 
